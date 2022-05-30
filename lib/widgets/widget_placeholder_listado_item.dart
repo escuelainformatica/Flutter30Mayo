@@ -49,7 +49,7 @@ class _WidgetPlaceholderListadoItem
                         border: Border.all(
                           color: Colors.grey,
                         ),
-                        borderRadius: BorderRadius.all(Radius.circular(20))),
+                        borderRadius: BorderRadius.all(Radius.circular(10))),
                   )
               ),
               SizedBox(height: 20,),
@@ -62,7 +62,7 @@ class _WidgetPlaceholderListadoItem
                         border: Border.all(
                           color: Colors.grey,
                         ),
-                        borderRadius: BorderRadius.all(Radius.circular(20))),
+                        borderRadius: BorderRadius.all(Radius.circular(10))),
                   )
               )
             ],

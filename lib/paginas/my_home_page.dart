@@ -15,9 +15,9 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   Stream<List<dynamic>> leerDatos() async* {
     //https://raw.githubusercontent.com/escuelainformatica/weather/main/weather.json
-    //await Future<void>.delayed(const Duration(seconds: 3));
+    await Future<void>.delayed(const Duration(seconds: 3));
     var url = Uri.https('raw.githubusercontent.com',
-        '/escuelainformatica/weather/main/weatherx.json', {'q': '{https}'});
+        '/escuelainformatica/weather/main/weather.json', {'q': '{https}'});
     var response = await http.get(url);
     if (response.statusCode == 200) {
       var climas = convert.jsonDecode(response.body) as List<dynamic>;
